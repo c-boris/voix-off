@@ -75,7 +75,7 @@ export default function Intro() {
       </div> */}
 
       <motion.h1
-        className="mb-32 mt-32 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-40 mt-80 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -99,7 +99,7 @@ export default function Intro() {
       <div
       
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-8"
     >
       {/* <SectionHeading>__________________________________</SectionHeading> */}
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
@@ -122,7 +122,7 @@ export default function Intro() {
     </div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
