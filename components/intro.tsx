@@ -32,10 +32,11 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
+    
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] z-[999]"
+      className="max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] z-10 mt-28"
     >
       {/* <div className="flex items-center justify-center">
         <div className="relative">
@@ -73,9 +74,14 @@ export default function Intro() {
           </motion.span>
         </div>
       </div> */}
-
+        <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -z-10">
+          <source src="/gotwet.mp4" type="video/mp4" />
+        </video>
+        {/* <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -top-10 -z-10 mb-12">
+          <source src="/gotwet.mp4" type="video/mp4" />
+        </video> */}
       <motion.h1
-        className="mb-40 mt-80 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className=" px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -86,9 +92,9 @@ export default function Intro() {
         <h2 className="text-2xl font-bold tracking-tight sm:text-4xl">
           La voix de vos projets
         </h2> */}
-        <span className="text-4xl font-bold tracking-tight sm:text-6xl">Julie Voix-Off</span>
+        <span className="text-4xl text-gray-100 font-bold tracking-tight sm:text-6xl">Julie Voix-Off</span>
         
-        <p className="text-2xl">La voix de vos projets</p>
+        <p className="text-2xl mb-4 text-gray-100">La voix de vos projets</p>
          {/* I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I enjoy
@@ -99,10 +105,10 @@ export default function Intro() {
       <div
       
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-8"
+      className="mb-4 max-w-[53rem] scroll-mt-28 text-center sm:mb-8"
     >
       {/* <SectionHeading>__________________________________</SectionHeading> */}
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 max-sm:hidden">
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -122,7 +128,7 @@ export default function Intro() {
     </div>
 
       <motion.div
-        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

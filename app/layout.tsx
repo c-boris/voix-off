@@ -30,9 +30,9 @@ export default function RootLayout({
           </video> */}
 
       
-        <video autoPlay loop controls muted playsInline className="absolute inset-0 object-cover h-screen xl:h-auto -top-10 ">
+        {/* <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -top-10 ">
           <source src="/gotwet.mp4" type="video/mp4" />
-        </video>
+        </video> */}
       
 
         {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>

@@ -21,7 +21,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Home studio");
+  const { ref } = useSectionInView("Studio");
 
   return (
     <section
