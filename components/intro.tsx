@@ -107,7 +107,7 @@ export default function Intro() {
       ref={ref}
       className="mb-4 max-w-[53rem] scroll-mt-28 text-center sm:mb-8"
     >
-      {/* <SectionHeading>__________________________________</SectionHeading> */}
+      
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 max-sm:hidden">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -128,7 +128,7 @@ export default function Intro() {
     </div>
 
       <motion.div
-        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
+        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mb-40"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
