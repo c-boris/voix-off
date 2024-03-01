@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowDown, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -74,7 +74,7 @@ export default function Intro() {
           </motion.span>
         </div>
       </div> */}
-        <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -z-10">
+        <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -z-10 -top-10">
           <source src="/gotwet.mp4" type="video/mp4" />
         </video>
         {/* <video autoPlay loop controls muted playsInline className="h-screen absolute inset-0 object-cover xl:h-auto -top-10 -z-10 mb-12">
@@ -111,7 +111,7 @@ export default function Intro() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 max-sm:hidden">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white/80 borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -135,7 +135,7 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        {/* <Link
+        <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
@@ -143,9 +143,9 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link> */}
+          Me contacter{" "}
+          <BsArrowDown className="opacity-70 group-hover:translate-x-1 transition" />
+        </Link>
 
         {/* <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
