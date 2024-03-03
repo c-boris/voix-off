@@ -32,8 +32,10 @@ export default function Contact() {
       <SectionHeading>Me contacter</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-      La qualité est généralement très élevée, mais certains efforts peuvent encore être ratés avec des dizaines de podcasts surgissant autour des mêmes thèmes ou émissions de télévision.
-      {/* {" "}
+        La qualité est généralement très élevée, mais certains efforts peuvent
+        encore être ratés avec des dizaines de podcasts surgissant autour des
+        mêmes thèmes ou émissions de télévision.
+        {/* {" "}
         <a className="underline" href="mailto:contact@julie-voix-off.com">
         contact@julie-voix-off.com
         </a>{" "}
@@ -59,12 +61,12 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Email"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="Message"
           required
           maxLength={5000}
         />
