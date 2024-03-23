@@ -32,9 +32,10 @@ export default function Contact() {
       <SectionHeading>Me contacter</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        La qualité est généralement très élevée, mais certains efforts peuvent
-        encore être ratés avec des dizaines de podcasts surgissant autour des
-        mêmes thèmes ou émissions de télévision.
+        Pour toute correspondance, veuillez utiliser le formulaire ci-dessous.
+        <br />
+        Je suis à votre disposition pour répondre à vos questions et vous
+        assister.
         {/* {" "}
         <a className="underline" href="mailto:contact@julie-voix-off.com">
         contact@julie-voix-off.com
