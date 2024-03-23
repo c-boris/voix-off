@@ -9,7 +9,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Studio");
 
   return (
-    <section id="skills" ref={ref} className="mb-28  scroll-mt-28 sm:mb-40">
+    <section id="studio" ref={ref} className="mb-28  scroll-mt-28 sm:mb-40">
       <SectionHeading>Home studio</SectionHeading>
       <Fade delay={200}>
         <div className="max-w-[900px] gap-4 grid grid-cols-12 grid-rows-2 ">

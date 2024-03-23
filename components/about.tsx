@@ -16,7 +16,7 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
+      id="prestations"
     >
       <SectionHeading>Prestations</SectionHeading>
       <div className="grid sm:grid-cols-2 gap-8 px-4 text-gray-700 dark:text-white/70">

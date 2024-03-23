@@ -11,7 +11,7 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="conditions" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Conditions</SectionHeading>
       <Fade delay={200}>
         <div className="max-w-[900px] gap-4 grid grid-cols-12 grid-rows-1 ">
