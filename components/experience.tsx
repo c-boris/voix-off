@@ -15,7 +15,7 @@ export default function Experience() {
       <SectionHeading>Conditions</SectionHeading>
 
       <div className="max-w-[900px] gap-4 grid grid-cols-12 grid-rows-1 ">
-        <Card className="col-span-12 sm:col-span-12 h-[380px] sm:h-[240px] dark:bg-white/10">
+        <Card className="col-span-12 sm:col-span-12 h-[320px] sm:h-[240px] dark:bg-white/10">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <div className="pt-4 pb-4 px-5 sm:pl-10 sm:pr-2 sm:pt-4  flex flex-col h-full sm:group-even:ml-[18rem]">
               <Fade direction="down">
