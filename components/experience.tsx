@@ -37,11 +37,11 @@ export default function Experience() {
           </CardHeader>
         </Card>
 
-        <Card className="h-[200px] sm:h-[260px] col-span-12 sm:col-span-5">
+        <Card className="h-[180px] sm:h-[260px] col-span-12 sm:col-span-5">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <div className="pt-4 pb-4 px-5 sm:pl-10 sm:pr-2 sm:pt-4  flex flex-col h-full sm:group-even:ml-[18rem]">
               <Fade direction="left">
-                <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+                <p className=" leading-relaxed text-gray-700 dark:text-white/70">
                   24h plus tard, je vous envoie le(s) fichier(s) audio prêts à
                   l’emploi, avec ou sans traitement selon vos souhaits ! Au
                   format simple .wav ou mp3 ou spécifique pour la téléphonie.
