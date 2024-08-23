@@ -41,7 +41,6 @@ export default function RootLayout({
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
-      <GoogleTagManager gtmId="GTM-567WQWFW" />
     </html>
   );
 }
