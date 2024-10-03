@@ -33,7 +33,7 @@ export default function About() {
           <br />
           Enregistrement de voix off explicative pour vos tutoriels, vos cours
           en ligne, vos formations, vos jeux vidéo, vos applications mobiles ou
-          votre attente et votre répondeur téléphonique.
+          votre répondeur téléphonique.
         </p>
 
         <p className="text-lg sm:text-right">
@@ -43,7 +43,7 @@ export default function About() {
         </p>
         <Fade direction="up">
           <p className="text-4xl font-bold">
-            Enregistrement de voix off de voix jouée pour habiller vos projets
+            Enregistrement de voix off jouée pour accompagner vos projets
             audiovisuels.
           </p>
         </Fade>
