@@ -1,14 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowDown, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsArrowDown } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import Skills from "@/components/skills";
 import { skillsData } from "@/lib/data";
 
 const fadeInAnimationVariants = {
@@ -29,32 +26,49 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  // État pour gérer l'affichage de la vidéo
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVideoVisible(true); // Afficher la vidéo après un délai
+    }, 1500); // Délai en millisecondes
+
+    return () => clearTimeout(timer); // Nettoyer le timer
+  }, []);
+
   return (
     <section
       ref={ref}
       id="home"
-      className="max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] z-10 mt-28"
+      className="max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] z-10 mt-28 "
     >
-      <video
-        autoPlay
-        loop
-        controls
-        muted
-        playsInline
-        className="h-screen absolute inset-0 object-cover xl:h-auto -z-10 -top-10"
-      >
-        <source src="/gotwet.mp4" type="video/mp4" />
-      </video>
+      {/* Affichage conditionnel de la vidéo */}
+      {isVideoVisible && (
+        <video
+          autoPlay
+          loop
+          controls
+          muted
+          playsInline
+          className="h-screen absolute inset-0 object-cover xl:h-auto -z-10 -top-10"
+        >
+          <source src="/gotwet.mp4" type="video/mp4" />
+        </video>
+      )}
+
       <motion.h1
-        className=" px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="text-4xl text-gray-100 font-bold tracking-tight sm:text-6xl">
+        <span className="text-4xl text-gray-100 font-bold tracking-tight sm:text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           Julie Voix-Off
         </span>
 
-        <p className="text-2xl mb-4 text-gray-100">La voix de vos projets</p>
+        <p className="text-2xl mb-4 text-gray-100 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          La voix de vos projets
+        </p>
       </motion.h1>
 
       <div
@@ -81,7 +95,7 @@ export default function Intro() {
       </div>
 
       <motion.div
-        className="flex  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mb-40"
+        className="flex sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mb-40"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -97,23 +111,8 @@ export default function Intro() {
           }}
         >
           Me contacter{" "}
-          <BsArrowDown className=" group-hover:translate-x-1 transition " />
+          <BsArrowDown className="group-hover:translate-x-1 transition " />
         </Link>
-        {/* <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a> */}
       </motion.div>
     </section>
   );
