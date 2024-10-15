@@ -61,8 +61,8 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Got Wet Sportswear",
-    description: "Narration, Voix-off, pour film promotionnel.",
-    tags: ["Narration", "Voix-off", "Film", "Pubilicité"],
+    description: "Narration, Voix Off, pour film promotionnel.",
+    tags: ["Narration", "Voix Off", "Film", "Pubilicité"],
     imageUrl: corpcommentImg,
   },
   // {

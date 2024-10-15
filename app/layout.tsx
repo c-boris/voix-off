@@ -12,8 +12,8 @@ import CookieConsent from "@/components/CookieConsent";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Julie Voix-Off | La voix de vos projets",
-  description: "Julie Voix-Off - La voix de vos projets",
+  title: "Julie Voix Off | La voix de vos projets",
+  description: "Julie Voix Off - La voix de vos projets",
 };
 
 export default function RootLayout({

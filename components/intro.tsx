@@ -63,7 +63,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="text-4xl text-gray-100 font-bold tracking-tight sm:text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          Julie Voix-Off
+          Julie Voix Off
         </span>
 
         <p className="text-2xl mb-4 text-gray-100 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
