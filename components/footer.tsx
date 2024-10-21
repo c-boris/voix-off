@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="px-4 text-center text-gray-700 dark:text-white/70">
+    <footer className="px-4 text-center text-gray-700 dark:text-white/70 text-xl">
       <small className="pb-10 block">
         &copy; {new Date().getFullYear()}{" "}
         <a
